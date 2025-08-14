@@ -5,4 +5,6 @@ def home(request):
     return render(request, 'index.html')
 
 def contato(request):
-    return render(request, 'contato.html')
+    nome = 'MATHEUS'
+    line = '50'
+    return render(request, 'contato.html',{'nome': nome,'line': line})

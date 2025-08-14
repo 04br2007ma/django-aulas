@@ -1,1 +1,18 @@
-<h1>hellow</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+<style>
+    body{
+        background-color: green;
+    }
+</style>
+{% endblock %}
+
+{% block 'title' %}pagina de catalogo {% endblock %}
+
+{% block 'body' %}
+<p>{{nome}}</p>
+<h1>{{line}}</h1>
+<h1>ola</h1>
+{% endblock %}
